@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8"/>
+    <title>HTML/CSS - Partie 2</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <th colspan="2">HTML/CSS - Partie 2</th>
+          </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <h2>Exercice 1 :</h2>
+            <p>En html et uniquement en html, créer un formulaire de connexion demandant un nom d'utilisateur et un mot de passe.</p>
+            <p>Le mot de passe ne doit pas s'afficher clairement.</em></p>
+          </td>
+            <td class="column2">
+              <form class="exo1form" action="Formulaire" method="post">
+                <label for="nom d'utilisateur">Nom d'utilisateur :</label>
+                <input type="text" id="nom d'utilisateur" name="nom d'utilisateur" placeholder="Saisir votre nom d'utilisateur" title="Nom d'utilsateur">
+                    
+                <label for="mot de passe">Mot de passe :</label>
+                <input type="password" id="mot de passe" name="mot de passe" placeholder="Saisir votre mot de passe" title="Mot de passe">
+                <button type="submit">Valider</button>
+              </form>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <h2>Exercice 2 :</h2>
+              <p>Créer un select comprenant trois groupes d'options "Langages", "Outils", "Méthodes" comprenant eux-même les options de votre choix.</p>
+            </td>
+            <td class="column2">
+              <label for="choose">Veuillez choisir votre option</label>
+              <select id="choose" name="choose">
+                <option disabled selected>Selectionner votre option</option>
+                <optgroup label="Languages">
+                  <option value="php">Php</option>
+                  <option value="javaScript">JavaScript</option>
+                  <option value="c++">C++</option>
+                  <option value="python">Python</option>
+                </optgroup>
+                <optgroup label="Outils">
+                  <option value="coffeeCup">CoffeeCup</option>
+                  <option value="komodo">Komodo</option>
+                  <option value="apache">Apache</option>
+                  <option value="visualcode">Visual Code</option>
+                </optgroup>
+                <optgroup label="Méthode">
+                  <option value="présentiel">Présentiel</option>
+                  <option value="distanciel">Distanciel</option>
+                  <option value="présentiel et distanciel">
+                    Présentiel et distanciel
+                  </option>
+                  <option value="autodidacte">Autodidacte</option>
+                </optgroup>
+              </select>
+              <button type="submit">Valider</button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <h2>Exercice 3 :</h2>
+              <p>Créer un tableau contenant une liste de 20 élèves avec nom, prénom, date de naissance, date
+                d'entrée en formation et nom de personne à contacter en cas d'urgence.</p>
+            </td>
+            <td class="column2">
+              <table class="tableExo3">
+                <caption>Elèves</caption>
+                  <thead>
+                    <tr>
+                      <th>Nom</th>
+                      <th>Prénom</th>
+                      <th>Date de Naissance</th>
+                      <th>Date d'entrée en formation</th>
+                      <th>Nom de la personne à contacter en cas d'urgence</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Km</td>
+                        <td>Saphir</td>
+                        <td>11/03/1989</td>
+                        <td>01/02/2021</td>
+                        <td>0612345678</td>
+                    </tr>
+                    <tr>
+                      <td>Km</td>
+                      <td>Saphir</td>
+                      <td>11/03/1989</td>
+                      <td>01/02/2021</td>
+                      <td>0612345678</td>
+                    </tr>
+                    <tr>
+                      <td>Km</td>
+                      <td>Saphir</td>
+                      <td>11/03/1989</td>
+                      <td>01/02/2021</td>
+                      <td>0612345678</td>
+                    </tr>
+                    <tr>
+                      <td>Km</td>
+                      <td>Saphir</td>
+                      <td>11/03/1989</td>
+                      <td>01/02/2021</td>
+                      <td>0612345678</td>
+                    </tr>
+                  </tbody>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <h2>Exercice 4 :</h2>
+              <p>Créer une page contenant un titre et deux paragraphes. Appliquer à chacun une police différente.</p>
+            </td>
+              <td class="column2">
+                <p id="para1">Paragraphe 1
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quo molestiae quam aliquid fugit natus repudiandae quasi? Ratione debitis nemo mollitia eligendi repellat maxime dicta! Porro nisi aut quis tempore.
+                </p>
+                <p id="para2">Paragraphe 2
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quo molestiae quam aliquid fugit natus repudiandae quasi? Ratione debitis nemo mollitia eligendi repellat maxime dicta! Porro nisi aut quis tempore.
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <h2>Exercice 5 :</h2>
+                <img src="/htmlcss_partie2/img/exo5.png" alt="exemple exo5">
+                <p>Le mot de passe ne doit pas s'afficher clairement.</em></p>
+              </td>
+                <td class="column2">
+                  <h3>Formulaire</h3>
+                  <form class="exo5form" method="POST" action="traitement.php">
+                    <p>
+                      <label for="nom">Veuillez saisir votre nom :</label>
+                      <input type="text" id="nom" name="nom" placeholder="Nom"/>
+                    </p>
+                    <p>
+                      <label for="prénom">Veuillez saisir votre prénom :</label>
+                      <input type="text" id="prénom" name="prenom" placeholder="Prénom"/>
+                    </p>
+                      <label for="adresse">Veuillez saisir votre adresse :</label>
+                      <input type="text" id="adresse" name="adresse" placeholder="Adresse"/>
+                    <p>
+                      <label for="telephone">Veuillez saisir votre numéro de téléphone :</label>
+                      <input type="tel" id="telephone" name="telephone" placeholder="Téléphone"/>
+                    </p>
+                    <p>
+                      <label for="password">Veuillez saisir votre mot de passe :</label>
+                      <input type="password" id="password" name="password" placeholder="Mot de Passe"/>
+                    </p>
+                    <div class="button">
+                      <button type="submit">Envoyer</button>
+                    </div>
+                  </form>
+                            </td>
+              </tr>
+    
+
+          
+      </tbody>
+    </table>
+  </body>
+</html>

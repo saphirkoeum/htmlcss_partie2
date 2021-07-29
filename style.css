@@ -1,0 +1,82 @@
+h1, h2 {
+  text-decoration: underline;
+  text-decoration-color: red;
+}
+table,td {
+  border: 1px solid #333;
+}
+thead, tfoot {
+  background-color: #333;
+  color: #fff;
+  font-size: 30px;
+}
+.column2{
+  text-align: center;
+  padding: 15px;
+}
+/* Exercice 1 */
+.exo1form {
+  background-color: #b4b4b4;
+  border: 2px solid black;
+  border-radius: 25px;
+  padding: 20px;
+  margin: 20px 20px;
+  font-size: 20px;
+}
+input {
+  box-sizing: border-box;
+  border-radius: 5px;
+  width: 100%;
+  font-size: 20px;
+}
+button {
+  background-color: antiquewhite;
+  border-radius: 5px;
+}
+/* Exercice 3 */
+.tableExo3{
+  margin-top: 20px;
+  border-collapse: collapse;
+  width: 80%;
+}
+caption{
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.tableExo3 tr:nth-child(even) {
+  background-color: pink;
+}
+.tableExo3 td, .tableExo3 th { /* Mettre une bordure sur les td ET les th */
+    border: 2px solid black;
+    font-size: 15px;
+    text-align: center;
+    padding: 15px;
+    height: 50px;
+  }
+.tableExo3  th{
+  background-color: grey;
+  color : black;
+}
+/* Exercice 4 */
+#para1 {
+  color: red;
+  font-family:"Times New Roman", Times, serif;
+  text-align: center;
+  padding-top: 50px;
+}
+#para2 {
+  color: black;
+  font-style: italic;
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+/* Exercice 5 */
+.exo5form {
+  padding: 1em;
+  border: 1px solid #CCC;
+  border-radius: 1em;
+  background-color: #f7d1d5;
+  margin:20PX;
+  border: 1px solid;
+  box-shadow: 5px 10px;
+}
